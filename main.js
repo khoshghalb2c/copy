@@ -13,7 +13,11 @@
  function fallbackCopyTextToClipboard(text){
   var textArea = document.createElement("textarea");
   textArea.value = text; 
-  textArea.style.display = "none";
+  textArea.style.position = "fixed";
+  textArea.style.maxWidth = "1px";
+  textArea.style.maxHeight = "1px";
+  textArea.style.top = "0";
+  textArea.style.left = "0";
   document.body.appendChild(textArea);
   textArea.focus(); 
   textArea.select();
