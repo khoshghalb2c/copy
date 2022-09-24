@@ -3,9 +3,9 @@
  * Copyright 2020-2021;
  */
  function Scopy(text){
-  if(!navigator.clipboard)
+  /*if(!navigator.clipboard)
     fallbackCopyTextToClipboard(text);
-  else 
+  else*/ 
    navigator.clipboard.writeText(text).then(function(){}, function(err){});
  }
  function fallbackCopyTextToClipboard(text){
