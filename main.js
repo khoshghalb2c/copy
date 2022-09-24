@@ -3,12 +3,11 @@
  * Copyright 2020-2021;
  */
  function Scopy(text){
-  /*if(!navigator.clipboard)*/
-    fallbackCopyTextToClipboard(text);
-  /*
-  else
-   navigator.clipboard.writeText(text).then(function(){}, function(err){});
-   */
+  var textArea = document.createElement("textarea");
+  textArea.value = text;
+  textArea.select();
+  textArea.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(textArea.value);
  }
  function fallbackCopyTextToClipboard(text){
   var textArea = document.createElement("textarea");
