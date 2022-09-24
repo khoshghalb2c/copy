@@ -4,13 +4,6 @@
  */
  function Scopy(text){
   var textArea = document.createElement("textarea");
-  textArea.value = text;
-  textArea.select();
-  textArea.setSelectionRange(0, 99999);
-  navigator.clipboard.writeText(textArea.value);
- }
- function fallbackCopyTextToClipboard(text){
-  var textArea = document.createElement("textarea");
   textArea.value = text; 
   textArea.style.position = "fixed";
   textArea.style.maxWidth = "1px";
@@ -21,7 +14,7 @@
   textArea.focus(); 
   textArea.select();
   textArea.setSelectionRange(0, 99999);
-  textArea.clipboard.writeText(textArea.value);
+  navigator.clipboard.writeText(textArea.value);
   document.body.removeChild(textArea);
  }
 /*!* POWERED BY khoshghalb2c.ir *!*/
