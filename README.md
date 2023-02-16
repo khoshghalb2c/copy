@@ -15,3 +15,8 @@ to end of `body` tag in `HTML` or add it end of `head` tag in `HTML` and call `S
 ### Example:
 
 you can goto [`example.html`](/example.html) and see example of this function.
+
+### Licence:
+```
+Copyright © 2020 Khoshghalb2c.ir. All Rights Reserved.
+```
