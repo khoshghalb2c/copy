@@ -1,6 +1,6 @@
 /*!
  * Scopy > Owner is https://github.com/khoshghalb2c;
- * Copyright 2020-2021;
+ * Copyright © 2020;
  */
  function Scopy(text){
   var textArea = document.createElement("textarea");
